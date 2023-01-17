@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: #f7f5ff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo15.HelloController">
+    <children>
+        <Button fx:id="start" layoutX="958.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchtoScene2" prefHeight="89.0" prefWidth="239.0" style="-fx-border-color: #201606; -fx-border-width: 3;" text="Procvičovat">
+            <font>
+                <Font size="23.0" />
+            </font></Button>
+        <Label fx:id="label" alignment="CENTER" layoutX="399.0" layoutY="304.0" prefHeight="80.0" prefWidth="813.0" style="-fx-border-color: #201606; -fx-border-width: 2;" text="Label" visible="false">
+            <font>
+                <Font size="33.0" />
+            </font></Label>
+        <Button fx:id="button1" layoutX="397.0" layoutY="438.0" mnemonicParsing="false" onAction="#b1" prefHeight="80.0" prefWidth="263.0" style="-fx-border-color: #201606; -fx-border-width: 3;" visible="false">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button fx:id="button2" layoutX="946.0" layoutY="432.0" mnemonicParsing="false" onAction="#b2" prefHeight="80.0" prefWidth="263.0" style="-fx-border-color: #201606; -fx-border-width: 3;" visible="false">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button fx:id="button3" layoutX="398.0" layoutY="663.0" mnemonicParsing="false" onAction="#b3" prefHeight="80.0" prefWidth="263.0" style="-fx-border-color: #201606; -fx-border-width: 3;" visible="false">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button fx:id="button4" layoutX="946.0" layoutY="663.0" mnemonicParsing="false" onAction="#b4" prefHeight="80.0" prefWidth="263.0" style="-fx-border-color: #201606; -fx-border-width: 3;" visible="false">
+            <font>
+                <Font size="15.0" />
+            </font></Button>
+        <Button fx:id="Next" layoutX="1373.0" layoutY="782.0" mnemonicParsing="false" onAction="#switchtoScene2" style="-fx-border-color: #201606;" text="Next" visible="false" />
+        <Button fx:id="back" layoutX="14.0" layoutY="862.0" mnemonicParsing="false" onAction="#backonAction" style="-fx-border-color: #201606;" text="back" visible="false" />
+        <Button fx:id="add" layoutX="104.0" layoutY="384.0" mnemonicParsing="false" onAction="#addonAction" style="-fx-border-color: #201606;" text="ADD" />
+        <Button fx:id="remove" layoutX="104.0" layoutY="494.0" mnemonicParsing="false" onAction="#removeonAction" style="-fx-border-color: #201606;" text="REMOVE" />
+        <TextField fx:id="txtf1" layoutX="620.0" layoutY="304.0" style="-fx-border-color: #201606;" visible="false" />
+        <RadioButton fx:id="sein_b" layoutX="437.0" layoutY="307.0" mnemonicParsing="false" onAction="#seinonAction" text="Sein" visible="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="foof" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="haben_b" layoutX="332.0" layoutY="307.0" mnemonicParsing="false" onAction="#habenonAction" text="Haben" toggleGroup="$foof" visible="false" />
+        <TextField fx:id="txtf2" layoutX="962.0" layoutY="304.0" prefHeight="24.0" prefWidth="56.0" style="-fx-border-color: #201606;" visible="false" />
+        <Button fx:id="add1" layoutX="1082.0" layoutY="344.0" mnemonicParsing="false" onAction="#add1onAction" style="-fx-border-color: #201606;" text="Přidat položku" visible="false" />
+        <RadioButton fx:id="help_b" layoutX="426.0" layoutY="270.0" mnemonicParsing="false" toggleGroup="$foof" visible="false" />
+        <ListView fx:id="words2ListView" layoutX="422.0" layoutY="653.0" onMouseClicked="#displayonAction" prefHeight="190.0" prefWidth="792.0" style="-fx-background-color: #201606;" visible="false" />
+        <Label fx:id="page" alignment="CENTER" layoutX="1478.0" layoutY="850.0" prefHeight="32.0" prefWidth="67.0" />
+        <RadioButton fx:id="haben_b2" layoutX="332.0" layoutY="450.0" mnemonicParsing="false" onAction="#haben2onAction" text="Haben" visible="false">
+            <toggleGroup>
+                <ToggleGroup fx:id="dsa" />
+            </toggleGroup></RadioButton>
+        <RadioButton fx:id="sein_b2" layoutX="435.0" layoutY="450.0" mnemonicParsing="false" onAction="#sein2onAction" text="Sein" toggleGroup="$dsa" visible="false" />
+        <TextField fx:id="txtf3" layoutX="534.0" layoutY="447.0" style="-fx-border-color: #201606;" visible="false" />
+        <TextField fx:id="txtf4" layoutX="738.0" layoutY="447.0" style="-fx-border-color: #201606;" visible="false" />
+        <TextField fx:id="txtf5" layoutX="962.0" layoutY="447.0" prefHeight="24.0" prefWidth="56.0" style="-fx-border-color: #201606;" visible="false" />
+        <Button fx:id="add2" layoutX="1083.0" layoutY="506.0" mnemonicParsing="false" onAction="#add2onAction" prefHeight="24.0" prefWidth="113.0" style="-fx-border-color: #201606;" text="Přidat položku" visible="false" />
+        <ListView fx:id="words3ListView" layoutX="342.0" layoutY="653.0" prefHeight="190.0" prefWidth="792.0" visible="false" />
+        <Button fx:id="btn1" layoutX="178.0" layoutY="651.0" mnemonicParsing="false" onAction="#btn1onAction" prefHeight="24.0" prefWidth="177.0" style="-fx-border-color: #201606;" text="Seřadit podle infinitivu" visible="false" />
+        <Button fx:id="btn2" layoutX="178.0" layoutY="703.0" mnemonicParsing="false" onAction="#btn2onAction" style="-fx-border-color: #201606;" text="Seřadit podle perfektum" visible="false" />
+        <Button fx:id="btn3" layoutX="178.0" layoutY="758.0" mnemonicParsing="false" onAction="#btn3onAction" style="-fx-border-color: #201606;" text="Seřadit podle skupiny" visible="false" />
+        <Button fx:id="remove1" layoutX="1083.0" layoutY="344.0" mnemonicParsing="false" onAction="#remove1onAction" prefHeight="24.0" prefWidth="111.0" style="-fx-border-color: #201606;" text="Odebrat" visible="false" />
+        <Button fx:id="remove2" layoutX="1082.0" layoutY="506.0" mnemonicParsing="false" onAction="#remove2onAction" prefHeight="24.0" prefWidth="113.0" style="-fx-border-color: #201606;" text="Odebrat" visible="false" />
+        <Button fx:id="change2" layoutX="1269.0" layoutY="506.0" mnemonicParsing="false" onAction="#change2onAction" prefHeight="24.0" prefWidth="111.0" style="-fx-border-color: #201606;" text="Změnit" visible="false" />
+        <Button fx:id="change1" layoutX="1269.0" layoutY="344.0" mnemonicParsing="false" onAction="#change1onAction" prefHeight="24.0" prefWidth="113.0" style="-fx-border-color: #201606;" text="Změnit" visible="false" />
+        <TextField fx:id="maximum" layoutX="649.0" layoutY="376.0" prefHeight="32.0" prefWidth="89.0" style="-fx-border-color: #201606;" />
+        <ChoiceBox fx:id="grouppick" layoutX="449.0" layoutY="376.0" prefHeight="32.0" prefWidth="160.0" style="-fx-border-color: #201606;" />
+        <ImageView fx:id="im1" fitHeight="110.0" fitWidth="160.0" layoutX="237.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="im2" fitHeight="110.0" fitWidth="160.0" layoutX="1246.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="im3" fitHeight="110.0" fitWidth="160.0" layoutX="237.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <ImageView fx:id="im4" fitHeight="110.0" fitWidth="160.0" layoutX="1245.0" layoutY="648.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+        <Label fx:id="l1" layoutX="449.0" layoutY="346.0" prefHeight="32.0" prefWidth="140.0" text="Výběr skupiny">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l2" layoutX="649.0" layoutY="346.0" prefHeight="32.0" prefWidth="111.0" text="Počet slov">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l3" layoutX="104.0" layoutY="431.0" prefHeight="38.0" prefWidth="99.0" text="Úpravy :">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l4" layoutX="186.0" layoutY="260.0" prefHeight="38.0" prefWidth="221.0" text="Pravidelná slovesa:" visible="false">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="l5" layoutX="622.0" layoutY="278.0" text="Infinitiv" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l6" layoutX="962.0" layoutY="278.0" prefHeight="21.0" prefWidth="76.0" text="Skupina" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l7" layoutX="178.0" layoutY="410.0" text="Nepravidelná slovesa" visible="false">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="l8" layoutX="534.0" layoutY="422.0" text="Infinitiv" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l9" layoutX="738.0" layoutY="422.0" text="Perfektum" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="l10" layoutX="964.0" layoutY="422.0" text="Skupina" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Label fx:id="ma" alignment="CENTER" contentDisplay="CENTER" layoutX="775.0" layoutY="376.0" prefHeight="32.0" prefWidth="151.0">
+         <font>
+            <Font size="21.0" />
+         </font></Label>
+      <Label fx:id="ma1" layoutX="774.0" layoutY="346.0" prefHeight="32.0" prefWidth="162.0" text="Počet ve skupině">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
